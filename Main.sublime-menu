@@ -1,0 +1,15 @@
+[
+    {
+        "caption": "Project",
+        "mnemonic": "P",
+        "id": "project",
+        "children":
+        [
+            { 
+                "command": "open_sublime_project_file", 
+                "caption": "Open Current .sublime-project File", 
+                "mnemonic": "s" 
+            },
+        ]
+    },
+]

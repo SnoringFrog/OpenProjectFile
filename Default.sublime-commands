@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Project: Open .sublime-project File", 
+		"command": "open_sublime_project_file"
+	}
+]
