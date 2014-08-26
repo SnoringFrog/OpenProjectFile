@@ -7,8 +7,8 @@ So, rather than install this plugin, you can just set up the following keyboard 
 {
   "keys":["alt+shift+p"], 
   "command": "open_file", 
-  "args":{"file": "${project}"}"
-  }
+  "args":{"file": "${project}"}
+}
 ```
 
 **Menu Entry** (.sublime-menu; I added mine to the bottom of the `Project` toolbar entry): 
