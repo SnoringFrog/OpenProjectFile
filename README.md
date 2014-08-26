@@ -1,8 +1,13 @@
-**_Update_**: Turns out this plugin is mostly overkill (I had a feeling it should be, but I couldn't find the options I needed)
+Open Current .sublime-project File
+==================================
 
-So, rather than install this plugin, you can just set up the following keyboard shortcut/menu entry/command palette entry:
+This plugin provides a quick way to accesss the .sublime-project file of the current Sublime project. Simply open a Sublime project and use the keyboard shortcut (`Alt+Shift+P`) or via toolbar option in the `Project` menu to open the associated .sublime-project file for opening. This makes it easy to set up project-specific settings and the like. 
 
-**Keyboard Shortcut** (.sublime-keymap):
+******************************************************
+
+**_Update_**: Turns out this plugin is mostly overkill. You can add these three snippets to the proper files in `[Sublime installation]/Packages/User/` to get the keyboard shortcut, toolbar menu entry, and command palette entry that my plugin provides. Pretty much the only benefit of using my plugin is that these three things will get set up for you automatically and all of the settings get collected into their own directory.
+
+**Keyboard Shortcut** (Default.sublime-keymap):
 ```json
 {
   "keys":["alt+shift+p"], 
@@ -11,7 +16,7 @@ So, rather than install this plugin, you can just set up the following keyboard 
 }
 ```
 
-**Menu Entry** (.sublime-menu; I added mine to the bottom of the `Project` toolbar entry): 
+**Menu Entry** (Main.sublime-menu; I added mine to the bottom of the `Project` toolbar entry): 
 ```json
 {
   "caption": "Open Project File", 
@@ -20,7 +25,7 @@ So, rather than install this plugin, you can just set up the following keyboard 
 }
 ```
 
-**Command Palette Entry** (.sublime-commands):
+**Command Palette Entry** (Default.sublime-commands):
 ```json
 {
   "caption": "Project: Open .sublime-project File", 
@@ -29,12 +34,4 @@ So, rather than install this plugin, you can just set up the following keyboard 
 }
 ```
 
-Pretty much the only thing you'll gain from using my plugin is the fact that the shortcut key combo will be visible in the toolbar menu item and that you'll be able to access this from the Command Palette. Other than that, it just saves you the time of making these modifications yourself. 
 
-******************************************************
-
-
-Open Current .sublime-project File
-==================================
-
-This plugin provides a quick way to accesss the .sublime-project file of the current Sublime project. Simply open a Sublime project and use the keyboard shortcut (`Alt+Shift+P`) or via toolbar option in the `Project` menu to open the associated .sublime-project file for opening. This makes it easy to set up project-specific settings and the like. 
