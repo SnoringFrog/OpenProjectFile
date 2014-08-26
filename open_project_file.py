@@ -11,37 +11,3 @@ class OpenSublimeProjectFileCommand(sublime_plugin.WindowCommand):
 			message = "[Open .sublime-project File]: No .sublime-project file found]"
 			print(message)
 			sublime.status_message(message)
-
-#If empty, fill out basic shell?
-
-#Find good keyboard shortcut for this
-
-#Also find .sublime-workspace file?
-
-"""
-{
-    "folders":
-    [
-        {
-            "path": "src",
-            "folder_exclude_patterns": ["backup"]
-        },
-        {
-            "path": "docs",
-            "name": "Documentation",
-            "file_exclude_patterns": ["*.css"]
-        }
-    ],
-    "settings":
-    {
-        "tab_size": 8
-    },
-    "build_systems":
-    [
-        {
-            "name": "List",
-            "cmd": ["ls"]
-        }
-    ]
-}
-"""
