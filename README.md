@@ -5,7 +5,7 @@ This plugin provides a quick way to accesss the .sublime-project file of the cur
 
 ******************************************************
 
-**_Update_**: Turns out this plugin is mostly overkill. You can add these three snippets to the proper files in `[Sublime installation]/Packages/User/` to get the keyboard shortcut, toolbar menu entry, and command palette entry that my plugin provides. Pretty much the only benefit of using my plugin is that these three things will get set up for you automatically and all of the settings get collected into their own directory.
+**_Update_**: Turns out this plugin is mostly overkill. The toolbar item is already available at `Project -> Edit Project`. To get the keyboard shortcut and command palette entry, add these two snippets to the proper files in `[Sublime installation]/Packages/User/`. Pretty much the only benefit of using my plugin is that these things will get set up for you automatically and all of the settings get collected into their own directory.
 
 **Keyboard Shortcut** (Default.sublime-keymap):
 ```json
@@ -13,15 +13,6 @@ This plugin provides a quick way to accesss the .sublime-project file of the cur
   "keys":["alt+shift+p"], 
   "command": "open_file", 
   "args":{"file": "${project}"}
-}
-```
-
-**Menu Entry** (Main.sublime-menu; I added mine to the bottom of the `Project` toolbar entry): 
-```json
-{
-  "caption": "Open Project File", 
-  "command": "open_file",
-  "args": {"file": "${project}"} 
 }
 ```
 
